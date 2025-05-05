@@ -25,5 +25,6 @@ public class TodoListEntity {
 
     private LocalDate dataCriacao;
 
+    @Enumerated(EnumType.STRING)
     private Status status;
 }
