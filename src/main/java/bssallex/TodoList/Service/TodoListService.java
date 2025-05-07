@@ -8,7 +8,6 @@ import bssallex.TodoList.Request.ListRequest;
 import bssallex.TodoList.Response.ListResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -20,7 +19,6 @@ public class TodoListService {
 
     public List<ListResponse> listar(){
          List<TodoListEntity> listar = repository.findAll();
-
          return listar.stream()
                  .map(ListMapper::ListResponse)
                  .toList();
@@ -45,7 +43,7 @@ public class TodoListService {
         return verificarId.map(ListMapper::ListResponse);
     }
 
-    public ListResponse salvar(ListRequest request){
+    public ListResponse criar(ListRequest request){
          TodoListEntity salvar = ListMapper.ListRequest(request);
          salvar.setStatus(Status.PENDENTE);
          return ListMapper.ListResponse(repository.save(salvar));
@@ -68,12 +66,10 @@ public class TodoListService {
         });
     }
 
-
     public Optional<ListResponse> deletar(Long id){
         return repository.findById(id).map(d -> {
             repository.delete(d);
             return ListMapper.ListResponse(d);
         });
     }
-
 }
