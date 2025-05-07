@@ -25,8 +25,8 @@ A entidade principal representa uma tarefa, contendo:
 
 - `nome`: Nome da tarefa  
 - `descricao`: Descrição da tarefa  
-- `dataCriacao`: Data e hora de criação  
-- `status`: Enum (`PENDENTE`, `CONCLUIDA`)  
+- `dataCriacao`: Data de criação  
+- `status`: Enum (`PENDENTE`, `CONCLUIDO`)  
 
 ### 📦 DTOs
 
@@ -61,13 +61,13 @@ Camada de controle com os seguintes endpoints:
 
 ## 🔐 Autenticação
 
-- Implementada autenticação via **OAuth2 com Google** utilizando **Spring Security**.
+- Implementada autenticação via **Token JWT**, **OAuth2 Resource Server(Google)** utilizando **Spring Security**.
 
 ---
 
 ## 🗃️ Banco de Dados
 
-- Banco: **PostgreSQL** (pode ser adaptado para **MySQL**)  
+- Banco: **PostgreSQL** 
 - Contêiner gerenciado com **Docker**  
 - Migrações de schema com **Flyway**
 
@@ -84,29 +84,26 @@ Camada de controle com os seguintes endpoints:
 
 ## 📑 Documentação da API
 
-- API documentada com **Swagger**  
-- Acesse em: `http://localhost:8080/swagger-ui.html` após subir a aplicação
+- API documentada com **Swagger(OpenAPI)**  
 
 ---
 
-## 🐳 Docker
-
-Para rodar o banco de dados e a aplicação com Docker:
-
-```bash
-docker-compose up -d
 
 ## 🚀 Tecnologias Utilizadas
 
-- Java 17
-- Spring Boot
-- Spring Data JPA
-- Spring Security + OAuth2 (Google)
-- PostgreSQL ou MySQL
-- Flyway
+- Java 17  
+- Spring Boot  
+- Spring Data JPA  
+- Spring Security + JWT + OAuth2(Google)  
+- PostgreSQL
+- Flyway 
 - Swagger
 - Docker
 - Lombok
 - Maven
 - DTOs
-- ResponseEntity
+- ResponseEntity   
+
+---
+
+
