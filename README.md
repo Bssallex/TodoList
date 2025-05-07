@@ -17,6 +17,23 @@ Uma API RESTful desenvolvida com **Spring Boot** para gerenciamento de tarefas, 
 
 ---
 
+## 🚀 Tecnologias Utilizadas
+
+- Java 17  
+- Spring Boot  
+- Spring Data JPA  
+- Spring Security + JWT + OAuth2(Google)  
+- PostgreSQL
+- Flyway 
+- Swagger
+- Docker
+- Lombok
+- Maven
+- DTOs
+- ResponseEntity   
+
+---
+
 ## 🧱 Estrutura do Projeto
 
 ### ✳️ Entity
@@ -88,22 +105,5 @@ Camada de controle com os seguintes endpoints:
 
 ---
 
-
-## 🚀 Tecnologias Utilizadas
-
-- Java 17  
-- Spring Boot  
-- Spring Data JPA  
-- Spring Security + JWT + OAuth2(Google)  
-- PostgreSQL
-- Flyway 
-- Swagger
-- Docker
-- Lombok
-- Maven
-- DTOs
-- ResponseEntity   
-
----
 
 
