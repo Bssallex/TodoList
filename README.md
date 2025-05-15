@@ -66,13 +66,13 @@ Camada de controle com os seguintes endpoints:
 | Método | Endpoint                  | Descrição                      | Status HTTP             |
 |--------|---------------------------|-------------------------------|-------------------------|
 | GET    | `/tarefas`                | Listar todas as tarefas        | `200 OK`                |
-| GET    | `/tarefas/{id}`           | Buscar tarefa por ID           | `200 OK` / `404 NotFound` |
+| GET    | `/tarefas/{id}`           | Buscar tarefa por ID           | `200 OK`/`404 NotFound` |
 | GET    | `/tarefas/concluidas`     | Listar tarefas concluídas      | `200 OK`                |
 | GET    | `/tarefas/pendentes`      | Listar tarefas pendentes       | `200 OK`                |
 | POST   | `/tarefas`                | Criar uma nova tarefa          | `201 Created`           |
-| PUT    | `/tarefas/{id}/concluir`  | Concluir tarefa por ID         | `200 OK` / `404 NotFound` |
-| PUT    | `/tarefas/{id}`           | Atualizar tarefa por ID        | `200 OK` / `404 NotFound` |
-| DELETE | `/tarefas/{id}`           | Deletar tarefa por ID          | `204 No Content`        |
+| PUT    | `/tarefas/{id}/concluir`  | Concluir tarefa por ID         | `200 OK`/`404 NotFound` |
+| PUT    | `/tarefas/{id}`           | Atualizar tarefa por ID        | `200 OK`/`404 NotFound` |
+| DELETE | `/tarefas/{id}`           | Deletar tarefa por ID          | `204 NoContent`/`404 NotFound`|
 
 ---
 
